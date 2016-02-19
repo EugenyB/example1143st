@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="293.0" y="360.0">model.Game</node>
+    <node x="306.0" y="122.0">model.Apple</node>
+    <node x="0.0" y="122.0">model.SnakeElement</node>
+    <node x="-284.0" y="220.0">controller.Controller</node>
+    <node x="-310.0" y="391.0">view.GameView</node>
+    <node x="0.0" y="356.0">model.Snake</node>
+    <node x="121.25" y="0.0">model.GameElement</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="model.SnakeElement" target="model.GameElement">
+      <point x="0.0" y="-36.0" />
+      <point x="143.0" y="97.0" />
+      <point x="192.5" y="97.0" />
+      <point x="-71.25" y="36.0" />
+    </edge>
+    <edge source="model.Snake" target="model.SnakeElement">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="model.Apple" target="model.GameElement">
+      <point x="0.0" y="-36.0" />
+      <point x="384.5" y="97.0" />
+      <point x="335.0" y="97.0" />
+      <point x="71.25" y="36.0" />
+    </edge>
+    <edge source="model.Game" target="model.Snake">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="model.Game" target="model.Apple">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="200.5" />
+  <SelectedNodes>
+    <node>controller.Controller</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
