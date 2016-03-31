@@ -2,12 +2,78 @@
 <Diagram>
   <ID>JAVA</ID>
   <OriginalElement />
-  <nodes />
+  <nodes>
+    <node x="484.58333333333326" y="0.0">sample.Main</node>
+    <node x="134.73749999999995" y="452.0">model.Game</node>
+    <node x="279.5833333333333" y="224.0">model.Apple</node>
+    <node x="46.583333333333286" y="224.0">model.SnakeElement</node>
+    <node x="0.0" y="708.0">controller.Controller</node>
+    <node x="15.083333333333314" y="566.0">view.GameView</node>
+    <node x="94.08333333333329" y="338.0">model.Snake</node>
+    <node x="111.7458333333333" y="0.0">model.GameElement</node>
+  </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <edges>
+    <edge source="model.SnakeElement" target="model.GameElement">
+      <point x="0.0" y="-32.0" />
+      <point x="153.0833333333333" y="199.0" />
+      <point x="184.99583333333328" y="199.0" />
+      <point x="-73.25" y="87.0" />
+    </edge>
+    <edge source="controller.Controller" target="view.GameView">
+      <point x="-42.875" y="-59.0" />
+      <point x="128.625" y="683.0" />
+      <point x="171.83333333333331" y="683.0" />
+      <point x="52.25" y="46.0" />
+    </edge>
+    <edge source="model.Snake" target="model.SnakeElement">
+      <point x="-29.5" y="-32.0" />
+      <point x="123.58333333333329" y="313.0" />
+      <point x="99.83333333333329" y="313.0" />
+      <point x="-53.25" y="32.0" />
+    </edge>
+    <edge source="model.Apple" target="model.GameElement">
+      <point x="0.0" y="-32.0" />
+      <point x="359.5833333333333" y="199.0" />
+      <point x="331.4958333333333" y="199.0" />
+      <point x="73.25" y="87.0" />
+    </edge>
+    <edge source="controller.Controller" target="model.Game">
+      <point x="128.625" y="-59.0" />
+      <point x="300.125" y="683.0" />
+      <point x="245.58333333333331" y="683.0" />
+      <point x="245.58333333333331" y="536.0" />
+      <point x="233.07083333333333" y="536.0" />
+      <point x="39.33333333333337" y="32.0" />
+    </edge>
+    <edge source="model.Game" target="model.Snake">
+      <point x="0.0" y="-32.0" />
+      <point x="193.73749999999995" y="427.0" />
+      <point x="182.5833333333333" y="427.0" />
+      <point x="29.5" y="32.0" />
+    </edge>
+    <edge source="view.GameView" target="model.Game">
+      <point x="0.0" y="-46.0" />
+      <point x="119.58333333333331" y="546.0" />
+      <point x="154.40416666666664" y="546.0" />
+      <point x="-39.333333333333314" y="32.0" />
+    </edge>
+    <edge source="model.Game" target="model.Apple">
+      <point x="39.333333333333314" y="-32.0" />
+      <point x="233.07083333333327" y="427.0" />
+      <point x="359.5833333333333" y="427.0" />
+      <point x="0.0" y="32.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7576832151300237" x="340.0" y="413.0" />
   <SelectedNodes />
-  <Categories />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
 </Diagram>
 

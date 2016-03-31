@@ -38,7 +38,7 @@
          </children></Pane>
    </right>
    <center>
-      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <Pane fx:id="centralPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Canvas id="canvas" fx:id="canvas" height="362.0" width="458.0" />
          </children></Pane>
