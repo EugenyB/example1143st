@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.canvas.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.canvas.Canvas?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -34,13 +33,14 @@
    <right>
       <Pane prefHeight="361.0" prefWidth="142.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#drawGame" text="Button" />
+            <Button focusTraversable="false" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#startGame" text="Start" />
+            <Button focusTraversable="false" layoutX="14.0" layoutY="54.0" mnemonicParsing="false" onAction="#processTick" text="Button" />
          </children></Pane>
    </right>
    <center>
-      <Pane fx:id="centralPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <Pane fx:id="centralPane" focusTraversable="true" onKeyPressed="#keyPressed" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Canvas id="canvas" fx:id="canvas" height="362.0" width="458.0" />
+            <Canvas id="canvas" fx:id="canvas" focusTraversable="true" height="362.0" width="458.0" />
          </children></Pane>
    </center>
 </BorderPane>
